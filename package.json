@@ -4,13 +4,17 @@
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc --noEmit && vite build",
-    "serve": "vite preview"
+    "serve": "vite preview",
+    "test:headless": "npx playwright test",
+    "test:browser": "npx playwright test --headed"
   },
   "dependencies": {
+    "playwright": "^1.22.1",
     "vue": "^3.2.24",
     "vue-router": "^4.0.11"
   },
   "devDependencies": {
+    "@playwright/test": "^1.22.1",
     "@types/node": "^16.7.10",
     "@typescript-eslint/eslint-plugin": "^4.29.3",
     "@typescript-eslint/parser": "^4.29.3",
