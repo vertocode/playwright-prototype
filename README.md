@@ -4,4 +4,4 @@
 
 ## Tests:
 
-* #### InsertAndCheckInputs.spec.ts - https://youtu.be/zHgFCW3QWrY
+*  InsertAndCheckElements.spec.ts - https://youtu.be/z_YnJGUwzIk (check text inputs and checkbox simultaneously)
