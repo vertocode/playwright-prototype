@@ -21,13 +21,13 @@ test.describe('Check Vertocode blog', () => {
 
         await blog.openSection(page,optionSection)
 
-        await page.click(blog.sectionMenu)
-        const rightOption = page.locator(blog.sectionItem, { hasText: optionSection })
-        await rightOption.click()
-        await expect(page.locator('.display-4')).toContainText(optionSection.toLowerCase())
-
         const firstPostText: any = await page.locator(blog.titleItemList).first().textContent()
         await page.click(blog.titleItemList)
         await expect(page.locator('h1')).toHaveText(firstPostText)
+    })
+
+    test('Check element in the list by index.', async ({page}: any) => {
+        const secondItem = () => page.locator(blog.titleItemList).nth(1)
+        await expect(secondItem()).toBeVisible()
     })
 })

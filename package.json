@@ -9,6 +9,7 @@
     "test:browser": "npx playwright test --headed"
   },
   "dependencies": {
+    "cypress": "^10.11.0",
     "playwright": "^1.22.1",
     "vue": "^3.2.24",
     "vue-router": "^4.0.11"

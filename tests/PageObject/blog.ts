@@ -6,7 +6,7 @@ export class Blog {
     }
 
     get titleItemList() {
-        return '.container h3'
+        return '[data-test="title-item"]'
     }
 
     get sectionMenu() {
