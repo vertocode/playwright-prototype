@@ -4,4 +4,5 @@
 
 ## Tests:
 
-*  InsertAndCheckElements.spec.ts - https://youtu.be/z_YnJGUwzIk (check text inputs and checkbox simultaneously)
+*  Cypress VS Playwright - [blog](https://blog.vertocode.com/#/cypress-and-playwright/cypress-vs-playwright) | [youtube](https://www.youtube.com/watch?v=YaQTLf6QHIc&ab_channel=Verto)
+*  InsertAndCheckElements.spec.ts - [youtube](https://youtu.be/z_YnJGUwzIk)
