@@ -4,10 +4,6 @@ import { expect, test } from "@playwright/test"
 const blog = new Blog()
 const optionSection = 'Cypress-And-Playwright'
 
-test.beforeEach(async ({ page } : any) => {
-    await expect(page).not.toHaveURL('error')
-})
-
 test.describe('Check Vertocode blog', () => {
     test.beforeEach(async ({ page }: any) => {
         await page.goto(blog.baseUrl)
@@ -17,8 +13,6 @@ test.describe('Check Vertocode blog', () => {
     })
 
     test('Compare title of the Cypress VS Playwright of list with the page title.', async ({ page }) => {
-        await expect(page).toHaveURL(blog.baseUrl)
-
         await blog.openSection(page,optionSection)
 
         const firstPostText: any = await page.locator(blog.titleItemList).first().textContent()
@@ -31,3 +25,4 @@ test.describe('Check Vertocode blog', () => {
         await expect(secondItem()).toBeVisible()
     })
 })
+
